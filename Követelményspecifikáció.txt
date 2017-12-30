@@ -1,0 +1,30 @@
+﻿KÖVETELMÉNYSPECIFIKÁCIÓ
+
+Elektronikus itallap fejlesztés
+
+I. 	Név: Pumpkin Spice App
+
+II. 	Választott platform: Android
+
+III.	Alkalmazás rövid leírása: 
+	Az alkalmazás segítségével lehetőségünk lesz a kávézó kínálatát elektronikusan megtekinteni,
+	valamint leadni a rendelésünket. Segítségével saját asztalunknál meg tudjuk rendelni a kívánt
+	italokat.
+
+IV. 	Funkcionális követelmények:
+	Az alkalmazás segítségével lehetőségünk lesz a kávézó teljes kínálatát megtekinteni, hiszen a teljes
+	terméklista kilistázásra kerül.  
+	Ha kiválasztottuk a legszimpatikusabb italt vagy italokat, hozzá tudjuk adni a kosárhoz. 
+	További funkció a választott italok összértékének megtekintése, mely elősegíti a döntést, és megkímél 
+	minket a kalkulálástól.
+	
+V.	Nem funkcionális követelmények:
+	Tableten való alkalmazás a legelőnyösebb.
+
+VI.	Rendszer követelmények:
+	A megfelelő működéshez mindenképpen szükség van aktív internetkapcsolatra.
+	
+
+
+
+
