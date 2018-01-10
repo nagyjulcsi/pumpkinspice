@@ -1,0 +1,24 @@
+[
+{
+  "id": 1,
+  "name": "Espresso",
+  "price": 450
+  
+},{
+  "id": 2,
+  "name": "Dupla espresso",
+  "price": 500
+},{
+  "id": 3,
+  "name": "Latte Macchiato",
+  "price": 550
+},{
+  "id": 4,
+  "name": "Jegeskávé",
+  "price": 550
+},{
+  "id": 5,
+  "name": "Melange",
+  "price": 650
+}
+]

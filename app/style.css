@@ -1,0 +1,17 @@
+body {
+    background-color: #AAAAAA;
+}
+
+.app {
+    background-color: #FFFFFF;
+}
+
+.red {
+    color: #ff0000;
+}
+
+@media (min-width: 992px) {
+    .app {        
+        margin-top: 30px;
+    }
+}

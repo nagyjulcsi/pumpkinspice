@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="http://tiny.cc/8c3qoy" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body ng-app="TestApp" ng-controller="TestController">
+                
+        <div class="container-fluid">
+            <div class="row">
+                <div class="app col-xs-16 col-md-8 col-md-offset-2">
+                    <div class="page-header">
+                        <h1> {{ message }} <small>Üdvözlünk PumpkinSpiceLatte kávézónkban!</small></h1>
+                    </div>
+                    
+                    <div class="col-sm-5 col-sm-push-7">                        
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Kosár
+                            </div>
+                            <div class="panel-body">
+                                <span ng-if="cart.length == 0">A kosár üres</span>
+                                <ul class="list-group">
+                                    <li class="list-group-item" ng-repeat="cartItem in cart">
+                                        {{ cartItem.name }}
+                                        <span class="label label-info">HUF {{ cartItem.price }}</span>
+                                        <span class="label label-default">{{ cartItem.amount }} db</span>
+                                        <button class="btn btn-danger btn-xs pull-right" ng-click="removeItem(cartItem)">X</button>
+                                    </li>
+                                </ul>
+                                <h3 class="pull-right" ng-class="{'red': sum() > 5000}">Összesen: HUF {{ sum() | number }}</h3>
+                                
+                                <form name="orderForm">
+                                    <input name="name" ng-model="name" ng-required="true" ng-minlength="5"/>
+                                    <button class="btn btn-primary" ng-disabled="!orderForm.$valid">Megrendel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-7 col-sm-pull-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Termékek
+                            </div>
+                            <div class="panel-body">
+                                <input ng-model="filterObj.name"/>
+                                <ul class="list-group">
+                                    <li class="list-group-item" ng-repeat="item in items | filter:filterObj | orderBy:'-name'">
+                                        {{ item.name }} - {{ item.price }}
+                                        <button class="btn btn-primary btn-xs pull-right"
+                                        ng-click="addClick(item)">Add</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.14/angular.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
