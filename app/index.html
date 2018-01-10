@@ -24,7 +24,7 @@
                                 <ul class="list-group">
                                     <li class="list-group-item" ng-repeat="cartItem in cart">
                                         {{ cartItem.name }}
-                                        <span class="label label-info">HUF {{ cartItem.price }}</span>
+                                        <span class="label label-info"> HUF {{ cartItem.price }}</span>
                                         <span class="label label-default">{{ cartItem.amount }} db</span>
                                         <button class="btn btn-danger btn-xs pull-right" ng-click="removeItem(cartItem)">X</button>
                                     </li>
